@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tm tất cả các số nguyên tố nhỏ hơn 10000</title>
+</head>
+<body>
+<script>
+    function laSoNguyenTo(number){
+        ok = true;
+        for (let i = 2; i <= number/2; i++) {
+            if (number % 1 == 0){
+                ok = false;
+                break;
+            }
+        } return;
+    }
+    for (let i = 1; 1 < 10000; i++){
+        if (laSoNguyenTo(i)){
+            document.write(i);
+            document.write("");
+        }
+    }
+</script>
+</body>
+</html>
