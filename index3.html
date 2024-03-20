@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--<button onclick="tinhGiaiThua()">tính giai thừa</button>-->
+<!--<script>-->
+<!--    function tinhGiaiThua(){-->
+<!--        let inp = +prompt("Nhập số cần tính giai thưa");-->
+<!--        let giaiThua = 1;-->
+<!--        for (let i = 0; i <= inp; i++){-->
+<!--            giaiThua *= i;-->
+<!--        }-->
+<!--        document.write(inp + "! =" + giaiThua);-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    function kiemTraKyTuSo(inp){-->
+<!--        let ok = false;-->
+<!--        for (let i = 0; i < 10; i++) {-->
+<!--            if (inp == 1){-->
+<!--                ok = true;-->
+<!--            }-->
+<!--        } return ok;-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--<button onclick="alert( kiemTraSoNguyenDuong())">Kiểm tra số nguyên dương</button>-->
+<!--<script>-->
+<!--    function kiemTraSoNguyenDuong() {-->
+<!--        let inp = +prompt("Nhập vào cái j đó ");-->
+<!--        ok = true;-->
+<!--        if (!Number.isInteger(inp)) {-->
+<!--            ok = false;-->
+<!--        }-->
+<!--        if (inp < 0) {-->
+<!--            ok = false;-->
+<!--        }-->
+<!--        return ok;-->
+<!--    }-->
+<!--</script>-->
+
+<!--<button onclick="alert(daoSo(1,2))">Đảo số 1 và 2</button>-->
+<!--<script>-->
+<!--    function daoSo(a,b) {-->
+<!--        return (b + " " + a);-->
+<!--    }-->
+<!--</script>-->
+
+<script>
+    // function daoMang(array) {
+    //     let reArray = [];
+    //     for (let i = 0; i < array.length; i++) {
+    //         reArray[i] = array[array.length -1 - i];
+    //     }
+    //     return reArray;
+    // }
+    // let arr = [1,2,3,4,5,6,7,8,9,12,13];
+    // alert(daoMang(arr));
+
+
+    function Dem1KyTuTrongMang(array,kyTu) {
+        count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (kyTu == array[i]) {
+                count++;
+            }
+
+        }
+        return count;
+    }
+    let arr = [1,2,3,4,5,6,7,6,5,4,3,2,1];
+    alert(Dem1KyTuTrongMang(arr,7));
+</script>
+</body>
+</html>

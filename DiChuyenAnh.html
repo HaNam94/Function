@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="images.jpg" style="width: 500px; top: 100px; left: 200px; position: absolute;" alt="" id="x">
+<button onclick="phai()">Sang phai</button>
+<button onclick="trai()">Sang trai</button>
+<button onclick="tren()">len Tren</button>
+<button onclick="duoi()">Xuong Duoi</button>
+
+<script>
+    let y = document.getElementById('x');
+    let tocDoX = 1;
+    let tocDoY = 1;
+
+    function phai() {
+        y.style.left = parseInt(y.style.left) + 20 + 'px';
+    }
+
+    function trai() {
+
+        y.style.left = parseInt(y.style.left) - 20 + 'px';
+    }
+
+    function tren() {
+        y.style.top = parseInt(y.style.top) - 20 + 'px';
+    }
+
+    function duoi() {
+        y.style.top = parseInt(y.style.top) + 20 + 'px';
+    }
+
+    setInterval(() => {
+        phai()
+        tren()
+        if (parseInt(y.style.left) > window.innerWidth - 100 || parseInt(y.style.left) < 0) {
+            tocDoX = -tocDoX
+        }
+        if (parseInt(y.style.top) > window.innerHeight - 150 || parseInt(y.style.top) < 0) {
+            tocDoY = - tocDoY
+        }
+    }, 100);
+</script>
+</body>
+</html>
